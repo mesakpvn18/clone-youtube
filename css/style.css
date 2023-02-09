@@ -72,8 +72,123 @@ body{
 }
 
 .video-title{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: .5rem;
     text-decoration: none;
+    color: rgb(24, 23, 23);
+}
+
+.video-channel-name{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+}
+
+.video-channel-name:hover{
+    color: #111;
+}
+
+.video-channel-name, .video-metadata{
+    color: #555;
+}
+
+.video-metadata{
+    display: block;
+}
+
+.videos-section-title{
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.video-section-title-close{
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 2rem;
+    color:#555;
+    cursor: pointer;
+}
+
+.videos{
+    background-color: #f9f9f9;
+}
+
+.categories{
+    padding: 1rem 2rem;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.category-section{
+    display: flex;
+    overflow: hidden;
+}
+
+.category{
+    margin: 1rem;
+    word-wrap: none;
+    white-space: nowrap;
+    border: 1px solid #CCC;
+    border-radius: 900px;
+    background-color: #e7e7e7;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    font-size: inherit;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+.category:hover{
+    background-color: #ddd;
+}
+
+.category.active{
+    background-color: #606060;
+    color: #ffffff;
+}
+
+.category:first-child{
+    margin-right: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.youtube-logo{
+    height: 40px;
+}
+
+.search-bar{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 2rem 0 4rem;
+    flex-direction: row;
+}
+.search-input{
+    width: 100%;
+    font-size: inherit;
+    padding: .4rem;
+    border: 1px solid #777;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.search-btn{
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #777;
+    background-color: #f8f8f8;
+    border-left: none;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
